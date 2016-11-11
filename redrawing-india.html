@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Studio Subu - Redrawing India</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+    <!-- Latest compiled and minified JavaScript -->
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
+<link href='https://fonts.googleapis.com/css?family=Montserrat:400,700' rel='stylesheet' type='text/css'>
+<link href='https://fonts.googleapis.com/css?family=Roboto:400,300,500,900' rel='stylesheet' type='text/css'>
+<script src="//code.jquery.com/jquery-1.12.0.min.js"></script>
+
+</head>
+<body>
+<div class="header">
+	<div class="container clearfix">
+		<div class="col-sm-8 col-sm-offset-2 text-center-not-xs">
+			<img src="images/logo_website.png" class="logo" alt="Subu">
+			<div id="menu" class="navigation hidden-xs">
+				<a href="index.html">About</a>
+				<a href="services.html">Services</a>
+				<ul class="has-dropdown"><a class="active">Work</a>
+					<ul class="sub-menu">
+						<li><a href="#">QUICK TOUR</a></li>
+						<li><a href="fspa-branding">FSPA Branding</a></li>
+						<li><a href="teach-for-india-report.html">Teach For India Report</a></li>
+						<li><a href="treelife-consulting.html">Treelife Consulting</a></li>
+						<li><a href="firki-branding.html">Firki Branding</a></li>
+						<li><a href="the-coach-crew.html">The Coach Crew</a></li>
+						<li><a href="maya-the-musical.html">Maya, The Musical</a></li>
+						<li><a href="by-the-way-cafe.html">By The Way Cafe</a></li>
+						<li><a href="toons-pub.html">Toons Pub</a></li>
+						<li><a href="tfi-recruitment-campaign.html">TFI Recruitment Campaign</a></li>
+						<li><a href="swag-t-shirt-design.html">SWAG T-shirt Design</a></li>
+						<li><a href="redrawing-india-book-cover.html">Redrawing India Book Cover</a></li>
+						<li><a href="the-warehouse.html">The Warehouse</a></li>
+					</ul>
+				</ul>
+				<a href="contact.html">Contact</a>
+			</div>
+			<a href="#" class="visible-xs mobile-menu-activator"></a>
+			
+		</div>
+	</div>
+</div>
+<div class="padding-sixty work">
+	<div class="container">
+		<div class="col-sm-10 text-center col-sm-offset-1">
+			<h3>Redrawing India</h3>
+			<h5>book cover</h5>
+			<img src="images/pink_line.png" width="50" class="img-block">
+			<br><br>
+			<h5 class="pink">Brief</h5>
+			<p>
+				In celebrating Teach For India’s fifth year of operations, Founder & CEO Shaheen Mistri wrote a book reflecting on the first 5 years of the organization. The book was a unique and important communication channel through which we hoped to reach a wide audience of readers to share our work and vision for an excellent education for all children.
+			</p>
+			<br><br>
+			<h5 class="pink">Solution</h5>
+			<p>
+				The cover of the book needed to represent the truth and hope of the country and its children. We used a poignant, yet joyous photograph to emote our story, and the Teach For India logo colors painted on the title of the book to emphasize our mission.
+			</p>
+			<br><br>
+			<h5 class="pink">Impact</h5>
+			<p>
+				Over 3000 copies of the book were sold in the first 3 months, and it is available on all major online e-commerce portals in India and abroad.
+			</p>
+			<br><br>
+			<img width="99%" src="redrawing-india/work_51.jpg">
+			<img width="99%" src="redrawing-india/work_52.jpg">
+			<img width="99%" src="redrawing-india/work_53.jpg">
+			<img width="99%" src="redrawing-india/work_54.jpg">
+			<img width="99%" src="redrawing-india/work_55.jpg">
+			<img width="99%" src="redrawing-india/work_56.jpg">
+			<br><br>
+			<div class="pagination clearfix">
+				<a href="#"><img src="images/previous.png"></a>
+				<a href="#"><img src="images/next.png"></a>
+			</div>
+		</div>	
+	</div>
+</div>
+
+<div class="footer pink-bg"></div>
+<script>
+$(document).ready(function(){
+  var doc_height=$(document).height();
+  var win_height=$(window).height();
+  if(doc_height<=win_height)
+  	$(".footer").addClass("sticky-footer");
+  $(".sub-menu").hide();
+  $(".has-dropdown").click(function(e){
+  	$(this).parent().find(".sub-menu").toggle();
+  	$(".header").toggleClass("longer");
+  });
+  $(".mobile-menu-activator").click(function(e){
+  	e.preventDefault();
+  	$("#menu").toggleClass("mobile-navigation hidden-xs navigation");
+  	$(".has-dropdown").toggleClass("mobile");
+  });
+});
+    $(window).bind('scroll', function(ev){
+    	if($(window).scrollTop() > 300){
+			$(".header").addClass("sticky-header");
+		}
+		if($(window).scrollTop() < 300){
+			$(".header").removeClass("sticky-header");
+		}
+    });
+</script>
+</body>
+</html>
